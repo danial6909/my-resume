@@ -6,11 +6,8 @@
     scroll-behavior: smooth;
   }
   
-  @font-face {
-    font-family: "Bajka";
-    src: url("../assets/fonts/Bajka/Bajka-BoldItalic.ttf") format("truetype");
-  }
-  
+ 
+/*   
   @font-face {
     font-family: "gil";
     src: url("../assets/fonts/GilliganShutter.otf");
@@ -29,10 +26,12 @@
   @font-face {
     font-family: "kalm";
     src: url("../assets/fonts/Kalam-Bold.ttf");
+  } */
+  
+  
+  .card{
+    transition: all 3s ease-in-out;
   }
-  
-  
-  
   body {
     --sb-track-color: #000000;
     --sb-thumb-color: #ff0000;
