@@ -6,10 +6,7 @@
     scroll-behavior: smooth;
   }
   
-  @font-face {
-    font-family: "Bajka";
-    src: url("../assets/fonts/Bajka/Bajka-BoldItalic.ttf") format("truetype");
-  }
+ 
   
   @font-face {
     font-family: "gil";
@@ -32,7 +29,9 @@
   }
   
   
-  
+  .card{
+    transition: all 3s ease-in-out;
+  }
   body {
     --sb-track-color: #000000;
     --sb-thumb-color: #ff0000;

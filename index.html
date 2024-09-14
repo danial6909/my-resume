@@ -32,10 +32,12 @@
   </head>
 
   <body oncontextmenu="return true">
-
     <div class="scrollbar"></div>
     <div class="scrollbtn">
-      <i class="fa-solid fa-chevron-up" style="color: #ff0000; font-size: 18pt;"></i>
+      <i
+        class="fa-solid fa-chevron-up"
+        style="color: #ff0000; font-size: 18pt"
+      ></i>
     </div>
 
     <div id="page">
@@ -52,10 +54,10 @@
       <span class="name">Danial Kelidari</span>
     </div>
 
-    <div class="head" >
+    <div class="head">
       <div class="icon"><i class="fa fa-bars"> </i></div>
 
-      <div class="head-center" >
+      <div class="head-center">
         <div class="box"><a class="link" href="#">Home</a></div>
         <div class="box"><a class="link" href="#text-about">About</a></div>
         <div class="box"><a class="link" href="#portfolio">Portfolio</a></div>
@@ -63,7 +65,7 @@
       </div>
 
       <div class="head-right">
-        <div  onclick="op()" id="setting">
+        <div onclick="op()" id="setting">
           <img id="setting-image" src="../assets/images/settings.gif" alt="" />
         </div>
 
@@ -119,31 +121,51 @@
             </div>
 
             <div class="protect">
-              <img class="email-image" src="../assets/images/calendar.png" alt="" />
+              <img
+                class="email-image"
+                src="../assets/images/calendar.png"
+                alt=""
+              />
               <p id="email">Birthday:</p>
               <p class="text">6-Bahman-1382</p>
             </div>
 
             <div class="protect">
-              <img class="email-image" src="../assets/images/phone-call.png" alt="" />
+              <img
+                class="email-image"
+                src="../assets/images/phone-call.png"
+                alt=""
+              />
               <p id="email">Phone:</p>
               <pre class="text">09381543140              </pre>
             </div>
 
             <div class="protect">
-              <img class="email-image" src="../assets/images/experience.png" alt="" />
+              <img
+                class="email-image"
+                src="../assets/images/experience.png"
+                alt=""
+              />
               <p id="email">Experience:</p>
               <pre class="text">1 year        </pre>
             </div>
 
             <div class="protect">
-              <img class="email-image" src="../assets/images/placeholder.png" alt="" />
+              <img
+                class="email-image"
+                src="../assets/images/placeholder.png"
+                alt=""
+              />
               <p id="email">Residence:</p>
               <pre class="text">Iran                   </pre>
             </div>
 
             <div class="protect">
-              <img class="email-image" src="../assets/images/translate.png" alt="" />
+              <img
+                class="email-image"
+                src="../assets/images/translate.png"
+                alt=""
+              />
               <p id="email">Language:</p>
               <p class="text">persian</p>
             </div>
@@ -202,107 +224,31 @@
       <div class="protect_port">
         <h1 class="port">Portfolio</h1>
         <div class="menu_port">
-          <a  class="project" id="all"
+          <a class="project" id="all" onclick="filterPortfolio('all')"
             >All
-            <div class="line2"></div>
-          </a>
-          <div class="project" id ="project">
-            Projects
-            <div class="line2"></div>
-          </div>
-          <a class="project" id="practis"
+            <div class="line2"></div
+          ></a>
+          <a class="project" id="project" onclick="filterPortfolio('project')"
+            >Projects
+            <div class="line2"></div
+          ></a>
+          <a class="project" id="practis" onclick="filterPortfolio('practis')"
             >Practices
-            <div class="line2"></div>
-          </a>
-          <a  class="project" id="forms"
+            <div class="line2"></div
+          ></a>
+          <a class="project" id="forms" onclick="filterPortfolio('forms')"
             >Forms
-            <div class="line2"></div>
-          </a>
-          <a  class="project" id="input-port"
+            <div class="line2"></div
+          ></a>
+          <a
+            class="project"
+            id="input-port"
+            onclick="filterPortfolio('input-port')"
             >Inputs
-            <div class="line2"></div>
-          </a>
+            <div class="line2"></div
+          ></a>
         </div>
-        <div class="pictures">
-          <div class="picture" id="image1">
-            <div class="card" id="im1">
-              <path
-                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-              ></path>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  minim veniam, quis nostrud exercitation ullamco.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="picture" id="image2">
-            <div class="card" id="im2">
-              <path
-                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-              ></path>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  minim veniam, quis nostrud exercitation ullamco.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="picture" id="image3">
-            <div class="card" id="im3">
-              <path
-                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-              ></path>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  minim veniam, quis nostrud exercitation ullamco.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="picture" id="image4">
-            <div class="card" id="im4">
-              <path
-                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-              ></path>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  minim veniam, quis nostrud exercitation ullamco.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="picture" id="image5">
-            <div class="card" id="im5">
-              <path
-                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-              ></path>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  minim veniam, quis nostrud exercitation ullamco.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="picture" id="image6">
-            <div class="card" id="im6">
-              <path
-                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-              ></path>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  minim veniam, quis nostrud exercitation ullamco.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="pictures" id="prentPortfolio"></div>
       </div>
     </div>
     <div class="client">
@@ -310,9 +256,13 @@
         <div class="slider">
           <div class="slider-box">
             <i class="fa-solid fa-angles-left" id="left"></i>
-            <img src="./../assets/images/im7.png" alt="" class="slide-image active">
-            <img src="./../assets/images/im8.png" alt="" class="slide-image">
-            <img src="./../assets/images/im9.png" alt="" class="slide-image">
+            <img
+              src="./../assets/images/im7.png"
+              alt=""
+              class="slide-image active"
+            />
+            <img src="./../assets/images/im8.png" alt="" class="slide-image" />
+            <img src="./../assets/images/im9.png" alt="" class="slide-image" />
             <i class="fa-solid fa-angles-right" id="right"></i>
           </div>
         </div>
@@ -323,7 +273,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="fotter" id="contact">
       <div class="contact">
         <h1 class="text-contact">contact</h1>
@@ -377,30 +327,21 @@
           <div class="contact-right">
             <div class="info">
               <div class="fl">
-                <i
-                  class="fa-solid fa-envelope icon-fot"
-                
-                ></i>
+                <i class="fa-solid fa-envelope icon-fot"></i>
                 <div class="text-ab">
                   <p class="tex">Email</p>
                   <span class="value-tex">wolfdan1382@gmail.com</span>
                 </div>
               </div>
               <div class="fl">
-                <i
-                  class="fa-solid fa-phone icon-fot" 
-                 
-                ></i>
+                <i class="fa-solid fa-phone icon-fot"></i>
                 <div class="text-ab">
                   <p class="tex">Phone</p>
                   <span class="value-tex">+98 09381543140</span>
                 </div>
               </div>
               <div class="fl">
-                <i
-                  class="fa-solid fa-location-dot icon-fot"
-  
-                ></i>
+                <i class="fa-solid fa-location-dot icon-fot"></i>
                 <div class="text-ab">
                   <p class="tex">Location</p>
                   <span class="value-tex">Iran</span>
